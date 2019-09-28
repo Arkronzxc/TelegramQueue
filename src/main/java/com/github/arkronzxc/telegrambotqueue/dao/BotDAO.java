@@ -13,6 +13,12 @@ public class BotDAO {
     private List<String> groupsNames = new ArrayList<>();
     private Map<User, Student> studentsNames = new HashMap<>();
 
+    public BotDAO() {
+        teachersNames.add("Первый");
+        teachersNames.add("Второй");
+        groupsNames.add("123");
+    }
+
     public Student createUser(String username, String group, String teacherName, User telegramUser) {
         if (!teachersNames.contains(teacherName) || !groupsNames.contains(group)) {
             throw new IllegalArgumentException("Incorrect data");
