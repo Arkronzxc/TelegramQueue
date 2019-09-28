@@ -20,7 +20,7 @@ public class MainBot {
 
         LOG.info("Initializing API context... ");
 
-        LOG.info("Configuring bot options...");
+        LOG.info("Configuring bot options... ");
         try {
 
             ApiContextInitializer.init();
