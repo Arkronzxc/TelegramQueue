@@ -34,7 +34,8 @@ public class LPBot extends TelegramLongPollingBot {
         SendMessage response = new SendMessage();
         response.enableMarkdown(true);
         response.setChatId(message.getChatId());
-        response.setText("Penis");
+        response.setText("200 ok");
+        response.setReplyToMessageId(message.getMessageId());
         try {
             execute(response);
         } catch (TelegramApiException e) {
