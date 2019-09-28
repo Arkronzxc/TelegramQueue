@@ -52,14 +52,14 @@ public class MainBot {
             ApiContextInitializer.init();
             TelegramBotsApi botsApi = new TelegramBotsApi();
 
-          /*  DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
+            DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
 
-          *//*  botOptions.setProxyHost(PROXY_HOST);
+/*            botOptions.setProxyHost(PROXY_HOST);
             botOptions.setProxyPort(PROXY_PORT);
-            botOptions.setProxyType(DefaultBotOptions.ProxyType.SOCKS5);*//*
+            botOptions.setProxyType(DefaultBotOptions.ProxyType.SOCKS5);*/
 
-            botsApi.registerBot(new Bot(botOptions));*/
-            botsApi.registerBot(new LPBot());
+            botsApi.registerBot(new Bot(botOptions));
+//            botsApi.registerBot(new LPBot());
             System.out.println("Бот зарегестрирован...");
         } catch (TelegramApiException e) {
             e.printStackTrace();
